@@ -20,9 +20,9 @@
 
 	"mounts": [
 		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
-		"source=${env:HOME}/.config,target=/home/vscode/.config,type=bind",
-		"source=${env:HOME}/.gnupg,target=/home/vscode/.gnupg,type=bind",
-		"source=${env:XDG_RUNTIME_DIR}/gnupg/S.gpg-agent,target=/home/vscode/.gnupg/S.gpg-agent,type=bind"
+		"source=${env:HOME}/.config,target=/home/node/.config,type=bind",
+		"source=${env:HOME}/.gnupg,target=/home/node/.gnupg,type=bind",
+		"source=${env:XDG_RUNTIME_DIR}/gnupg/S.gpg-agent,target=/home/node/.gnupg/S.gpg-agent,type=bind"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
