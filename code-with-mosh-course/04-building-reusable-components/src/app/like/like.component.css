@@ -1,0 +1,8 @@
+.bi {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.highlighted {
+    color: deeppink;
+}
