@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { Part4Component } from './part4/part4.component';
 import { LikeComponent } from './part4/like/like.component';
 import { HomeComponent } from './home/home.component';
+import { Part5Component } from './part5/part5.component';
+import { ZippyComponent } from './part5/zippy/zippy.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { HomeComponent } from './home/home.component';
     Part4Component,
     LikeComponent,
     HomeComponent,
+    Part5Component,
+    ZippyComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
