@@ -16,6 +16,8 @@ import { LikeComponent } from './part4/like/like.component';
 import { HomeComponent } from './home/home.component';
 import { Part5Component } from './part5/part5.component';
 import { ZippyComponent } from './part5/zippy/zippy.component';
+import { Part6Component } from './part6/part6.component';
+import { CourseFormComponent } from './part6/course-form/course-form.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { ZippyComponent } from './part5/zippy/zippy.component';
     HomeComponent,
     Part5Component,
     ZippyComponent,
+    Part6Component,
+    CourseFormComponent,
   ],
   imports: [
     BrowserModule,
