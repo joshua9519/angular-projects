@@ -7,6 +7,7 @@ import { Part3Component } from './part3/part3.component';
 import { Part4Component } from './part4/part4.component';
 import { Part5Component } from './part5/part5.component';
 import { Part6Component } from './part6/part6.component';
+import { Part7Component } from './part7/part7.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'part3', component: Part3Component },
   { path: 'part4', component: Part4Component },
   { path: 'part5', component: Part5Component },
-  { path: 'part6', component: Part6Component }
+  { path: 'part6', component: Part6Component },
+  { path: 'part7', component: Part7Component }
 ];
 
 @NgModule({
