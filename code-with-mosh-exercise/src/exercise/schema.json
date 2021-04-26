@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "ExerciseSchema",
+    "title": "Code with Mosh Exercise Schema",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "x-prompt": "What should the title be?"
+        },
+        "path": {
+            "type": "string",
+            "format": "path",
+            "visible": false
+        },
+        "name": {
+            "type": "string",
+            "$default": {
+                "$source": "argv",
+                "index": 0
+            }
+        }
+    },
+    "required": [
+        "title"
+    ]
+}
