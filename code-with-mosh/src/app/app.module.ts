@@ -20,6 +20,8 @@ import { Part6Component } from './part6/part6.component';
 import { CourseFormComponent } from './part6/course-form/course-form.component';
 import { Part7Component } from './part7/part7.component';
 import { SignupFormComponent } from './part7/signup-form/signup-form.component';
+import { Part8Component } from './part8/part8.component';
+import { ChangePasswordFormComponent } from './part8/change-password-form/change-password-form.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { SignupFormComponent } from './part7/signup-form/signup-form.component';
     Part6Component,
     CourseFormComponent,
     Part7Component,
-    SignupFormComponent
+    SignupFormComponent,
+    Part8Component,
+    ChangePasswordFormComponent,
   ],
   imports: [
     BrowserModule,
