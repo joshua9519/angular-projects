@@ -10,7 +10,7 @@ import { Part3Component } from './part3/part3.component';
 import { TitleCaseExceptPipe } from './part3/title-case-except.pipe';
 import { FavouriteComponent } from './part3/favourite/favourite.component';
 import { TitleCaseComponent } from './part3/title-case/title-case.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Part4Component } from './part4/part4.component';
 import { LikeComponent } from './part4/like/like.component';
 import { HomeComponent } from './home/home.component';
@@ -49,6 +49,7 @@ import { ChangePasswordFormComponent } from './part8/change-password-form/change
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
