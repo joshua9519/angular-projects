@@ -22,6 +22,9 @@ import { Part7Component } from './part7/part7.component';
 import { SignupFormComponent } from './part7/signup-form/signup-form.component';
 import { Part8Component } from './part8/part8.component';
 import { ChangePasswordFormComponent } from './part8/change-password-form/change-password-form.component';
+import { Part9Component } from './part9/part9.component';
+import { PostsComponent } from './part9/posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,12 +47,15 @@ import { ChangePasswordFormComponent } from './part8/change-password-form/change
     SignupFormComponent,
     Part8Component,
     ChangePasswordFormComponent,
+    Part9Component,
+    PostsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
