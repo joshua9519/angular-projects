@@ -89,6 +89,18 @@ export default function (options: exerciseOptions): Rule {
                 addRoutingRecorder.insertRight(importChanges.pos, importChanges.toAdd);
             }
             _tree.commitUpdate(addRoutingRecorder);
+
+            const buffer = _tree.read('src/app/app.component.html')
+            const content = buffer?.toString();
+            if (!content) {
+                throw new SchematicsException("Cannot read src/app/app.component.html")
+            }
+
+            const appendIndex = content.indexOf('</nav>');
+            var split = options.name.split(/(\d+)/);
+            const content2Append = `  <a routerLink="/${options.name}" routerLinkActive="active">${classify(split[0])} ${split[1]}</a>\n`;
+            const updatedContent = content.slice(0, appendIndex) + content2Append + content.slice(appendIndex);
+            _tree.overwrite("src/app/app.component.html", updatedContent);
         },
 
         // The mergeWith() rule merge two trees; one that's coming from a Source (a Tree with no
