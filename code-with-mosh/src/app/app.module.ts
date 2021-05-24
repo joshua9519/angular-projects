@@ -25,6 +25,7 @@ import { ChangePasswordFormComponent } from './part8/change-password-form/change
 import { Part9Component } from './part9/part9.component';
 import { PostsComponent } from './part9/posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
