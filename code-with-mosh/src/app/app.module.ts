@@ -22,10 +22,13 @@ import { Part7Component } from './part7/part7.component';
 import { SignupFormComponent } from './part7/signup-form/signup-form.component';
 import { Part8Component } from './part8/part8.component';
 import { ChangePasswordFormComponent } from './part8/change-password-form/change-password-form.component';
-import { Part9Component } from './part9/part9.component';
-import { PostsComponent } from './part9/posts/posts.component';
+import { Part9aComponent } from './part9a/part9a.component';
+import { PostsComponent } from './part9a/posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostService } from './services/post.service';
+import { FollowersService } from './services/followers.service';
+import { Part9bComponent } from './part9b/part9b.component';
+import { FollowerComponent } from './part9b/follower/follower.component';
 
 @NgModule({
   declarations: [
@@ -48,8 +51,10 @@ import { PostService } from './services/post.service';
     SignupFormComponent,
     Part8Component,
     ChangePasswordFormComponent,
-    Part9Component,
+    Part9aComponent,
     PostsComponent,
+    Part9bComponent,
+    FollowerComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,7 +64,8 @@ import { PostService } from './services/post.service';
     HttpClientModule
   ],
   providers: [
-    PostService
+    PostService,
+    FollowersService
   ],
   bootstrap: [AppComponent]
 })

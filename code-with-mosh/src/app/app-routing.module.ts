@@ -9,7 +9,8 @@ import { Part5Component } from './part5/part5.component';
 import { Part6Component } from './part6/part6.component';
 import { Part7Component } from './part7/part7.component';
 import { Part8Component } from './part8/part8.component';
-import { Part9Component } from './part9/part9.component';
+import { Part9aComponent } from './part9a/part9a.component';
+import { Part9bComponent } from './part9b/part9b.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'part6', component: Part6Component },
   { path: 'part7', component: Part7Component },
   { path: 'part8', component: Part8Component },
-  { path: 'part9', component: Part9Component},
+  { path: 'part9a', component: Part9aComponent},
+  { path: 'part9b', component: Part9bComponent},
 ];
 
 @NgModule({

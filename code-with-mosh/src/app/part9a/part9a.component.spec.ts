@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Part9Component } from './part9.component';
+import { Part9aComponent } from './part9a.component';
 
-describe('Part9Component', () => {
-  let component: Part9Component;
-  let fixture: ComponentFixture<Part9Component>;
+describe('Part9aComponent', () => {
+  let component: Part9aComponent;
+  let fixture: ComponentFixture<Part9aComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ Part9Component ]
+      declarations: [ Part9aComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Part9Component);
+    fixture = TestBed.createComponent(Part9aComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
