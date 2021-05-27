@@ -29,6 +29,13 @@ import { PostService } from './services/post.service';
 import { FollowersService } from './services/followers.service';
 import { Part9bComponent } from './part9b/part9b.component';
 import { FollowerComponent } from './part9b/follower/follower.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { Part10aComponent } from './part10a/part10a.component';
+import { GithubFollowersComponent } from './part10a/github-followers/github-followers.component';
+import { GithubProfileComponent } from './part10a/github-profile/github-profile.component';
+import { Part10bComponent } from './part10b/part10b.component';
+import { ArchiveComponent } from './part10b/archive/archive.component';
+import { ArchiveHomeComponent } from './part10b/archive-home/archive-home.component';
 
 @NgModule({
   declarations: [
@@ -55,13 +62,21 @@ import { FollowerComponent } from './part9b/follower/follower.component';
     PostsComponent,
     Part9bComponent,
     FollowerComponent,
+    NotFoundComponent,
+    Part10aComponent,
+    GithubFollowersComponent,
+    GithubProfileComponent,
+    PostsComponent,
+    Part10bComponent,
+    ArchiveComponent,
+    ArchiveHomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     PostService,

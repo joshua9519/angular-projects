@@ -11,6 +11,15 @@ import { Part7Component } from './part7/part7.component';
 import { Part8Component } from './part8/part8.component';
 import { Part9aComponent } from './part9a/part9a.component';
 import { Part9bComponent } from './part9b/part9b.component';
+import { Part10aComponent } from './part10a/part10a.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { GithubFollowersComponent } from './part10a/github-followers/github-followers.component';
+import { GithubProfileComponent } from './part10a/github-profile/github-profile.component';
+import { PostsComponent } from './part9a/posts/posts.component';
+import { FollowersService } from './services/followers.service';
+import { Part10bComponent } from './part10b/part10b.component';
+import { ArchiveComponent } from './part10b/archive/archive.component';
+import { ArchiveHomeComponent } from './part10b/archive-home/archive-home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -23,8 +32,46 @@ const routes: Routes = [
   { path: 'part6', component: Part6Component },
   { path: 'part7', component: Part7Component },
   { path: 'part8', component: Part8Component },
-  { path: 'part9a', component: Part9aComponent},
-  { path: 'part9b', component: Part9bComponent},
+  { path: 'part9a', component: Part9aComponent },
+  { path: 'part9b', component: Part9bComponent },
+  {
+    path: 'part10a',
+    component: Part10aComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: "followers",
+        pathMatch: 'full'
+      },
+      {
+        path: "followers/:userid",
+        component: GithubProfileComponent
+      },
+      {
+        path: "followers",
+        component: GithubFollowersComponent
+      },
+      {
+        path: "posts",
+        component: PostsComponent
+      }
+    ]
+  },
+  { 
+    path: 'part10b',
+    component: Part10bComponent,
+    children: [
+      {
+        path: '',
+        component: ArchiveHomeComponent
+      },
+      {
+        path: 'archive/:year/:month',
+        component: ArchiveComponent
+      }
+    ]
+  },
+  { path: "**", component: NotFoundComponent }
 ];
 
 @NgModule({
