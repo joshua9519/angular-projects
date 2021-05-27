@@ -1,0 +1,6 @@
+<h1>Routing and Navigation</h1>
+<nav>
+    <a class="nav-link" routerLinkActive="active" routerLink="./followers" [queryParams]="{ page: 1, order: 'newest' }">Followers</a>
+    <a class="nav-link" routerLinkActive="active" routerLink="./posts">Posts</a>
+</nav>
+<router-outlet></router-outlet>
