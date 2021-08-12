@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./follower.component.css']
 })
 export class FollowerComponent {
-  @Input("followers") followers: string
+  @Input() followers: string
 
   constructor() {}
 

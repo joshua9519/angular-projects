@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FollowersService } from '../services/followers.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { FollowersService } from '../services/followers.service';
   templateUrl: './part9b.component.html',
   styleUrls: ['./part9b.component.css']
 })
-export class Part9bComponent {
+export class Part9bComponent implements OnInit {
   followers: any[];
 
   constructor(private service: FollowersService) { }

@@ -1,12 +1,12 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'zippy',
+  selector: 'app-zippy',
   templateUrl: './zippy.component.html',
   styleUrls: ['./zippy.component.css']
 })
 export class ZippyComponent {
-  @Input('title') title: string;
+  @Input() title: string;
   isExpanded: boolean;
 
   toggleExpanded() {

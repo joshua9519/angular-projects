@@ -1,17 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-title-case',
   templateUrl: './title-case.component.html',
   styleUrls: ['./title-case.component.css']
 })
-export class TitleCaseComponent implements OnInit {
+export class TitleCaseComponent {
 
   content = "";
   capsContent: string;
   words: string[];
-
-  ngOnInit(): void {
-  }
 
 }
